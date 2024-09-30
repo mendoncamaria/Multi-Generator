@@ -1,1 +1,1 @@
-language- react+vite
+language- typescript+vite
