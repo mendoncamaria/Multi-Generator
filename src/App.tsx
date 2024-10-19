@@ -1,12 +1,12 @@
-import AdviceGenerator from './container/AdviceGenerator';
-import JokeGenerator from './container/JokeGenerator';
+import AdviceGenerator from './container/AdviceGenerator'
+import JokeGenerator from './container/JokeGenerator'
 
 function App() {
   return (
-    <>
+    <div>
       <JokeGenerator />
       <AdviceGenerator />
-    </>
+    </div>
   );
 }
 
