@@ -6,7 +6,7 @@ import axios from 'axios';
 type CardType = 'joke' | 'advice';
 
 interface ContentItem {
-  id: number;
+  id: string;
   type: CardType;
   text: string;
 }
@@ -14,7 +14,7 @@ interface ContentItem {
 // Mock Data
 const INITIAL_DATA: ContentItem[] = [
   {
-    id: 1,
+    id: "1",
     type: 'joke',
     text: 'UDP is better in the COVID era since it avoids unnecessary handshakes.',
   }
@@ -71,7 +71,7 @@ export const CardSwiper: React.FC = () => {
             const [, ...rest] = prevItems; // Evict the card that just animated away
 
             const newItem: ContentItem = {
-              id: response.data.slip.id,
+              id: response.data.slip.id.toString(),
               type: currentType, // FIX 2: Explicitly preserve the card type down the chain
               text: freshText,
             };
