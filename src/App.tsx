@@ -1,11 +1,9 @@
-import AdviceGenerator from './container/AdviceGenerator'
-import JokeGenerator from './container/JokeGenerator'
+import { CardSwiper } from './container/CardSwiper';
 
 function App() {
   return (
     <div>
-      <JokeGenerator />
-      <AdviceGenerator />
+      <CardSwiper />
     </div>
   );
 }
